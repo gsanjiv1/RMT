@@ -16,7 +16,16 @@
                         <div class="card-body">
                             <h5 class="card-title">You Have Already Attempted Quizes</h5>
                             
-                            <h6>You have earned points: {{ earned_points }}</h6>
+                            <h6>You have earned points: {{ earned_points }}</h6><br>
+                            <h6><strong>Risk Level Interpretation:</strong><h6><br>
+                                <p><strong>High Risk (Score above 30):</strong><br>
+                                    Your organization has significant cybersecurity weaknesses across multiple control categories. Urgent action is needed to implement security measures and improve your overall security posture. Consider seeking professional assistance for a comprehensive risk assessment and remediation plan.</p>
+        
+                                <p><strong>Medium Risk (Score between 20 and 30):</strong><br>
+                                    Your organization has some security gaps that require attention. Prioritize improvements in areas with the highest scores within the questionnaire. Regularly review and update your security controls.</p>
+        
+                                <p><strong>Low Risk (Score below 20):</strong><br>
+                                    Your organization has implemented many good security practices. However, it's crucial to maintain vigilance and continuously monitor for new threats. Regularly test your security controls and conduct security awareness training for employees.</p>
                         </div>
                     </div>
 

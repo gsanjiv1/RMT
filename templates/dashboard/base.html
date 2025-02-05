@@ -7,7 +7,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Risk Management and Compliance Mapping Tool</title>
+    <title>Risk Management Tool</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css">
     <script src="https://kit.fontawesome.com/ae360af17e.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="{% static 'css/dashboard/main.css' %}">
@@ -19,7 +19,7 @@
             <!-- Content For Sidebar -->
             <div class="h-100">
                 <div class="sidebar-logo">
-                    <a href="#"> <img src="./image/profile.jpg" alt="" style="height: 20px; width: 20px;"> <span style="color: black;">RMT</span></a>
+                    <a href="#"> <img src="{% static 'images/icon.jpg' %}" alt="" style="height: 50px; width: 50px;"> <span style="color: black;">RMT</span></a>
                 </div>
                 <ul class="sidebar-nav">
                     <li class="sidebar-header">
@@ -44,21 +44,9 @@
                         </a>
                     </li> {% endcomment %}
                     <li class="sidebar-item side-item">
-                        <a href="{% url "dashboard:assets" %}" class="sidebar-link {% if title == 'assets' %}active{% endif %}">
-                            <i class="fa-solid fa-upload pe-2"></i>
-                            Asset
-                        </a>
-                    </li>
-                    <li class="sidebar-item side-item">
                         <a href="{% url 'dashboard:risk_register' %}" class="sidebar-link {% if title == 'risk_register' %}active{% endif %}">
                             <i class="fa-solid fa-cash-register"></i>
                             Risk Register
-                        </a>
-                    </li>
-                    <li class="sidebar-item side-item">
-                        <a href="{% url "dashboard:trainings" %}" class="sidebar-link {% if title == 'trainings' %}active{% endif %}">
-                            <i class="fa-solid fa-chalkboard pe-2"></i>
-                            Trainings
                         </a>
                     </li>
                     <li class="sidebar-item side-item">
