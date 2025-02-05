@@ -11,6 +11,6 @@ urlpatterns = [
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT) + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
 
-admin.site.site_title = "RMCMT site admin (DEV)"
-admin.site.site_header = "RMCMT administration"
-admin.site.index_title = "RMCMT administration"
+admin.site.site_title = "RMT site admin (DEV)"
+admin.site.site_header = "RMT administration"
+admin.site.index_title = "RMT administration"
