@@ -78,33 +78,3 @@ This is a Django project with instructions on how to set it up and run it locall
 6. To access the Django admin interface, go to `http://127.0.0.1:8000/admin/` and log in with the superuser credentials created in step 3.
 
 
-
-## Setup Using Docker
-
-1. Navigate the project dir
-2. Build the docker image
-    ```bash
-    sudo docker compose build
-    ```
-3. Run the docker image and containers
-    ```bash
-    sudo docker compose up
-    ```
-4. Migrate DB
-    ```bash
-    sudo docker compose run --rm django python manage.py migrate
-    ```
-5. Load Initial Datas
-    ```bash
-    sudo docker compose run --rm django python manage.py loaddata fixtures/initial_question_type.json
-    
-    sudo docker compose run --rm django python manage.py loaddata fixtures/initial_risk_scale.json
-
-    sudo docker compose run --rm django python manage.py loaddata fixtures/initial_questions.json
-
-    sudo docker compose run --rm django python manage.py loaddata fixtures/initial_answers.json
-    ```
-6. Create Super User
-    ```bash
-    sudo docker compose run --rm django python manage.py createsuperuser
-    ```
